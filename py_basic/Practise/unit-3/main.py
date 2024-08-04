@@ -74,3 +74,19 @@ def prime_number(lst):
 
 list =[1,2,3,4,5,6,7,8,9]
 print(prime_number(list))
+
+
+def count_frequency(str):
+    cnt=0
+    for  i in range(97,123):
+        j=chr(i)
+        for l in str:
+            if j==l:
+                cnt+=1
+    
+        print(j,":",cnt)
+
+    
+
+str="aabba"
+print(count_frequency(str))
