@@ -32,3 +32,45 @@ print(max_min_tuple(tpl))
 
 
 #write a python program to merage two dicitionaries
+def merge_dicts(dict1 , dict2):
+    merged_dict=dict1.copy()
+    merged_dict.update(dict2)
+    return merged_dict
+
+dict1 ={'a':1 , 'b':2}
+dict2={'b':3 ,'c':4}
+print(merge_dicts(dict1,dict2))
+
+
+#write a python program to reverse each word in a given sentence.
+def rev_sentence(sentence):
+    words=sentence.split()
+    rev_word=[word[::-1] for word in words]
+    return " ".join(rev_word)
+
+sentence="coding is love"
+print(rev_sentence(sentence))
+
+#write a python progam to rotate a list to the right by a given number of steps.
+def rotate_list(lst,steps):
+    steps=steps%len(lst)
+    return lst[-steps:]+lst[:-steps]
+
+    input_lst =[int(x) for x in input("ENTER NUMBER SEPERATED BY SPACES : ").split()]
+    steps=int(input("ENter number of steps to rotate:"))
+    print(rotate_list(input_lst,steps))
+
+#write a python program that take a list of integers and returns a new list containing only the prime numbers
+def isprime(n):
+    if n<=1:
+        return False
+    for i in range(2,int(n**0.5)+1):
+        if n % i==0:
+            return False
+    return True
+
+def prime_number(lst):
+    return[int(x)for x in lst if isprime(x)]
+
+list =[1,2,3,4,5,6,7,8,9]
+print(prime_number(list))
