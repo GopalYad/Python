@@ -156,9 +156,39 @@ s5[1:3] =[5,6]
 print(s5)  #output : [1, 5, 6, 4]
 
 
+s6=[1,2,3,4,5,6,7,8,9]
+print(s6[3:9:2])
+print(s6[::2])
 
 
 
+l=[1,2,3,4,5,6,7,8,9]
+#return a list of numbers starting from last to second item of list
+print(l[::-1][0:-1])
+print(l[-1:-9:-1])
+print(l[-1:0:-1])
 
 
 
+#2.function to make pairs of two lsit
+def make_pairs(l1,l2):
+    len1=len(l1)
+    len2=len(l2)
+    if len1==len2:
+      return [(l1[i],l2[i]) for i in range(0,len1) ]
+      
+
+print(make_pairs([1,2,3],[4,5,6]))
+
+
+
+#3.function alternating(lst) 
+#return true if alternatively odd  && even starting with even number
+#otherwise return false
+def alternating(lst):
+   len1=len(lst)
+   return [True for i in range(len1 - 1) if lst[0] % 2 == 0 and lst[i + 1] % 2 != 0] 
+
+     
+
+print(alternating([1,3,6,5]))
