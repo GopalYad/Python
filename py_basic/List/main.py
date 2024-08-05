@@ -111,3 +111,54 @@ print(i13) #output : [1,2,3,,4,5,6]
 
 
 
+
+
+#List slicing 
+
+#1. Basic Slicing 
+s1=[10,20,30,40,50]
+print(s1[1:3]) #output : [20,30]
+
+#2. Slicing with default values
+
+#(i)From the begining of 4th element
+s2=[1,2,3,4,5]
+print(s2[:4]) #output : [1,2,3,4]
+
+#(ii)from the fourth element to end
+print(s2[1:]) #output : [2,3,4,5]
+
+#(iii) the entire element
+print(s2[:]) #output : [1,2,3,4,5]
+
+
+#3.Slicing  with step
+s3=[1,2,3,4,5]
+print(s3[::2]) #output : [1,3,5]
+
+#4. Negative indices
+s4=[1,2,3,4,5]
+
+#(i)from the beginnig to second lasat
+print(s4[:-1]) #output : [1, 2, 3, 4]
+
+#(ii) fromt the second last to beginning
+print(s4[-5:]) #output : [1, 2, 3, 4, 5]
+
+#(iii)reverse the list
+print(s4[::-1]) #output : [5, 4, 3, 2, 1]
+
+
+
+#4.Modifying list with slicing
+s5=[1,2,3,4]
+s5[1:3] =[5,6]
+print(s5)  #output : [1, 5, 6, 4]
+
+
+
+
+
+
+
+
