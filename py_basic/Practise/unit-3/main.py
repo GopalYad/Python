@@ -90,3 +90,23 @@ def count_frequency(str):
 
 str="aabba"
 print(count_frequency(str))
+
+
+#write a python program factor(n) that  return a list of  all positive divisors  of N (N>=1) 
+#For example  factor(6) [1,2,3,6]
+              # factor(1) [1]
+              # facator(13) 
+              # 
+def factor(n):
+    list=[]
+    if n>=1 :
+        for i in range(1, n +1):
+            if n %i==0:
+                list.append(i)
+
+    return list   
+
+print(factor(23))    
+
+
+#write a python programs, countsquares(N)
