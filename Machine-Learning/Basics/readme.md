@@ -29,3 +29,22 @@ role in reinforcement learning
 4.Reward
 For example : we play chess on computer . we have multiple ai trained model . there environment is chess board
 and agent is computer (which decide moves) and give reward (wheter it is positive or negative).
+
+
+
+supervised learning ->like teaching a computer how to do something  by showing its examples.
+in supervise learning model learns from labeled training data
+example:Email spam detection
+step1:Data collection
+step2:training 
+step3:testing
+
+
+Pridiction model or algorithms based classifictation
+classification gaol is to assign input data to predefined categories or classes.algorithms like K-nearest neighbours(KNN),logistic regression,
+decision trees , support vector machines  and neural networks are comonly used for classification tasks.
+
+regresssion goal is to predict numerical values based on input features.
+ALgorithm like linear regression  ,  polynomial  regression  and various type of regresion trees are used for regression taks.
+
+
