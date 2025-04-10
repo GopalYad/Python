@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+   <section class="page-1">
+   <img src="../assets/page1.jpg" alt="">
+    <p>try unique way to add Todo</p>
+    <button>Explore</button>
+   </section>
+   <section class="page-2"></section>
+    <!-- <script>
+        const API_URL='http://127.0.0.1:5000/api/tasks';
+        document.getElementById('add-task').addEventListener('submit',async(e)=>{
+            e.preventDefault();
+            const title =document.getElementById('task').value;
+            const description =document.getElementById('description').value;
+         const response =   await fetch(API_URL,{
+                method:'POST',
+                headers:{
+                    'Content-Type':'application/json'
+                },
+                body:JSON.stringify({title,description})
+            })
+        const data = await response.json();
+        console.log('task added successfully:',data)
+        })
+       
+    </script> -->
+</body>
+</html>
